@@ -1,5 +1,8 @@
 # Require your environment file to bootstrap Rails
-require ::File.expand_path('../config/environment',  __FILE__)
 
-# Dispatch the request
-run Rails.application
+# This file is used by Rack-based servers to start the application.
+require 'rubygems'
+require 'bundler'
+Bundler.setup
+require ::File.expand_path('../config/environment',  __FILE__)
+run Redmine::Application
