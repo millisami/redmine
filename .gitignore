@@ -26,4 +26,4 @@
 *.rbc
 
 /.bundle
-
+/public/assets
