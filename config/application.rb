@@ -6,9 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  # Bundler.require *Rails.groups(:assets => %w(development test))
+  Bundler.require *Rails.groups(:assets => %w(development test))
   # If you want your assets lazily compiled in production, use this line
-  Bundler.require(:default, :assets, Rails.env)
+  # Bundler.require(:default, :assets, Rails.env)
 end
 
 module Redmine
@@ -16,8 +16,8 @@ module Redmine
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.session_store :cookie_store, :key => "_redmine_session"
-    config.secret_token = "some secret phrase of at least 30 characters"
+    config.session_store :cookie_store, :key => "_redmine_session_crypt"
+    config.secret_token = "d1e92acff7b41ee2c7497a0beff6b7709e657e2ea3045203d223dcf56ecd215c57e7585af2e106bcf8d51dd6ac275be0ffec9a1f284c786a7559c11afaacfbc0"
     
     # Enable the asset pipeline
     config.assets.enabled = true
