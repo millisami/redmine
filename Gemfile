@@ -29,9 +29,9 @@ group :development do
   gem 'rails-dev-tweaks', '~> 0.5.1'
 end
 
-group :production do
+group :production, :staging do
+  gem 'airbrake'
 end
-
 group :test do
   gem 'sqlite3'
   gem 'autotest'

@@ -45,6 +45,9 @@ GEM
       activesupport (= 3.1.1)
     activesupport (3.1.1)
       multi_json (~> 1.0)
+    airbrake (3.0.8)
+      activesupport
+      builder
     arel (2.2.3)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -167,6 +170,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
   autotest
   autotest-fsevent
   autotest-growl
