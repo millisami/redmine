@@ -44,7 +44,7 @@ Redmine::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( jstoolbar_manifest.js calendar/calendar.js calendar/calendar-setup.js context_menu.js calendar.css context_menu.css context_menu_rtl.css jstoolbar.css rtl.css scm.css )
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
