@@ -1,3 +1,5 @@
+//= require_self
+
 /*  Copyright Mihai Bazon, 2002-2005  |  www.bazon.net/mishoo
  * -----------------------------------------------------------
  *

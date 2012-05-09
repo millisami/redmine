@@ -1,3 +1,7 @@
+/*
+*= require_self
+*/
+
 body, #wrapper { direction: rtl;}
 
 #quick-search { float: left; }

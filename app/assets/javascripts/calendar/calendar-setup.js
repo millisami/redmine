@@ -1,3 +1,5 @@
+//= require_self
+
 /*  Copyright Mihai Bazon, 2002, 2003  |  http://dynarch.com/mishoo/
  * ---------------------------------------------------------------------------
  *
